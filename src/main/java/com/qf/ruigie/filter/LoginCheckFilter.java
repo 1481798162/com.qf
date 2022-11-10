@@ -1,4 +1,4 @@
-package com.qf.ruigie.logincheckfilter;
+package com.qf.ruigie.filter;
 
 import com.alibaba.fastjson.JSON;
 import com.qf.ruigie.common.BaseContext;
@@ -40,7 +40,8 @@ public class LoginCheckFilter implements Filter {
                 "/employee/login",
                 "/employee/logout",
                 "/backend/**",
-                "/front/**"
+                "/front/**",
+                "/common/**" //不登入就可以访问
         };
 
         //2.判断本次请求是否需要处理
